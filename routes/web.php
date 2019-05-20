@@ -120,3 +120,15 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('roles/search', 'RoleController@index');
     });
 });
+
+/*
+|--------------------------------------------------------------------------
+| Mahasiswa Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::resource('mahasiswas', 'MahasiswasController', ['except' => ['show']]);
+Route::post('mahasiswas/search', [
+    'as' => 'mahasiswas.search',
+    'uses' => 'MahasiswasController@search'
+]);
