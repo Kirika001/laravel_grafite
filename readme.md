@@ -19,6 +19,9 @@ DB_PASSWORD=
 11. php artisan db:seed
 12. php artisan serve
 
+coba login dengan :
+U: admin@example.com
+P: admin
 
 
 custom:
